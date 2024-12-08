@@ -1,0 +1,427 @@
+/* General styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Lora', serif;
+    color: #B0BEC5;
+    background-color: #1C1C1C;
+    background-image: url('image.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    line-height: 1.6;
+}
+
+/* Navbar styles */
+.navbar {
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 100;
+}
+
+.navbar .logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #E0E0E0;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+}
+
+.navbar li {
+    margin-left: 20px;
+}
+
+.navbar a {
+    color: #B0BEC5;
+    text-decoration: none;
+}
+
+.nav-btn {
+    background-color: #37474F;
+    border: none;
+    color: #ECEFF1;
+    padding: 12px 20px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: transform 0.3s;
+    border-radius: 5px;
+    width: 150px;
+    text-align: center;
+    display: block;
+}
+
+.nav-btn:hover {
+    transform: scale(1.1);
+    background-color: #455A64;
+}
+
+/* Main section styles */
+.intro {
+    padding: 120px 20px 40px;
+    text-align: center;
+    background-color: rgba(33, 33, 33, 0.9);
+    border-radius: 10px;
+}
+
+.intro h1 {
+    font-size: 50px;
+    color: #00BCD4;
+}
+
+.intro p {
+    font-size: 20px;
+    color: #80CBC4;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.intro button {
+    background-color: #263238;
+    border: none;
+    color: #ECEFF1;
+    padding: 12px 20px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    border-radius: 5px;
+}
+
+.intro button:hover {
+    background-color: #37474F;
+}
+
+/* About Russia Section */
+#about-russia {
+    background-color: rgba(33, 33, 33, 0.9);
+    padding: 40px;
+    margin-top: 100px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+#about-russia h2 {
+    font-size: 40px;
+    margin-bottom: 20px;
+    color: #00BCD4;
+}
+
+#about-russia p {
+    font-size: 18px;
+    margin-bottom: 20px;
+    color: #B0BEC5;
+}
+
+#about-russia img {
+    display: block;
+    margin: 0 auto; /* Centering the image */
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+/* Section styles */
+.section {
+    background: rgba(33, 33, 33, 0.9);
+    padding: 40px;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+
+.section h2 {
+    margin-bottom: 20px;
+    color: #00BCD4;
+}
+
+.section ul {
+    list-style-type: disc;
+    margin-left: 40px;
+}
+
+.section img {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    height: auto;
+}
+
+/* Footer styles */
+footer {
+    background-color: rgba(33, 33, 33, 0.9);
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 20px;
+    color: #B0BEC5;
+}
+
+/* Button styles */
+button {
+    background-color: #263238;
+    border: none;
+    color: #ECEFF1;
+    padding: 12px 20px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #37474F;
+}
+
+/* Carousel Section */
+.carousel-section {
+    text-align: center;
+    padding: 30px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #80CBC4;
+}
+
+.carousel-container {
+    position: relative;
+    width: 80%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.carousel-slides {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    align-items: center;
+    justify-content: center;
+}
+
+.slide {
+    flex: 0 0 100%;
+    width: 100%;
+}
+
+.slide.active {
+    display: block;
+}
+
+.slide img {
+    display: block;
+    margin: 0 auto; /* Center the image */
+    width: 100%;
+    height: auto;
+    max-height: 500px;
+    border-radius: 10px;
+    object-fit: cover;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+/* Slide Caption */
+.slide-caption {
+    margin-top: 10px;
+    font-size: 24px;
+    color: #ECEFF1;
+}
+
+/* Navigation Buttons */
+.carousel-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.3);
+    border: none;
+    color: #ECEFF1;
+    font-size: 30px;
+    cursor: pointer;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    z-index: 10;
+    transition: background-color 0.3s ease;
+}
+
+.carousel-btn:hover {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.left {
+    left: 10px;
+}
+
+.right {
+    right: 10px;
+}
+
+.carousel-btn:focus {
+    outline: none;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+/* Russian Cuisine Section */
+#russian-cuisine {
+    background-color: #263238;
+    padding: 50px 20px;
+    margin-top: 50px;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+}
+
+#russian-cuisine h2 {
+    font-size: 42px;
+    color: #00BCD4;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+#russian-cuisine p {
+    font-size: 18px;
+    color: #B0BEC5;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.cuisine-item {
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.cuisine-item h3 {
+    font-size: 30px;
+    color: #80CBC4;
+    margin-bottom: 20px;
+}
+
+.cuisine-item p {
+    font-size: 18px;
+    color: #B0BEC5;
+    margin-bottom: 40px;
+}
+
+.cuisine-item img {
+    display: block;
+    margin: 0 auto;
+    width: 80%;
+    max-width: 500px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* Russia Technology Section */
+#russian-technology {
+    background-color: #263238;
+    padding: 50px 20px;
+    margin-top: 50px;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+}
+
+#russian-technology h2 {
+    font-size: 42px;
+    color: #00BCD4;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+#russian-technology p {
+    font-size: 18px;
+    color: #B0BEC5;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.tech-item {
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.tech-item h3 {
+    font-size: 30px;
+    color: #80CBC4;
+    margin-bottom: 20px;
+}
+
+.tech-item p {
+    font-size: 18px;
+    color: #B0BEC5;
+    margin-bottom: 15px;
+}
+
+.tech-item img {
+    display: block;
+    margin: 0 auto;
+    width: 80%;
+    max-width: 500px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.tech-item ul {
+    list-style-type: disc;
+    margin-left: 40px;
+    text-align: left;
+    font-size: 18px;
+    color: #B0BEC5;
+}
+
+.tech-item ul li {
+    margin-bottom: 10px;
+}
+
+/* Russian Landmarks Section */
+#russian-landmarks {
+    background-color: #37474F;
+    padding: 50px 20px;
+    margin-top: 50px;
+    border-radius: 15px;
+}
+
+#russian-landmarks h2 {
+    font-size: 42px;
+    color: #00BCD4;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+#russian-landmarks p {
+    font-size: 18px;
+    color: #B0BEC5;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.landmark-item {
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.landmark-item h3 {
+    font-size: 30px;
+    color: #80CBC4;
+    margin-bottom: 20px;
+}
+
+.landmark-item p {
+    font-size: 18px;
+    color: #B0BEC5;
+    margin-bottom: 15px;
+}
+
+.landmark-item img {
+    display: block;
+    margin: 0 auto;
+    width: 80%;
+    max-width: 500px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
